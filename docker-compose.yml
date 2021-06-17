@@ -3,7 +3,7 @@ services:
   builder:
     build: 
       context: ./
-	volumes:
+    volumes:
       - type: bind
         source: ./poly
         target: /poly
