@@ -2,8 +2,7 @@ FROM sleemp/osmosis:0.47
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
-RUN apt-get install --yes curl gnupg gnupg2 gnupg1
-RUN echo "deb http://repo.yandex.ru/yandex-disk/deb/ stable main" | tee -a /etc/apt/sources.list.d/yandex-disk.list > /dev/null && wget http://repo.yandex.ru/yandex-disk/YANDEX-DISK-KEY.GPG -O- | apt-key add - && apt-get update && apt-get install -y yandex-disk
+RUN apt-get install --yes curl
 
 COPY . /app
 
