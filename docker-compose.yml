@@ -4,15 +4,15 @@ services:
     build: 
       context: ./
     volumes:
-      - type: volume
+      - type: bind
         source: ./poly
         target: /poly
         read_only: false
-      - type: volume
+      - type: bind
         source: ./input
         target: /input
         read_only: false
-      - type: volume
+      - type: bind
         source: ./output
         target: /output
         read_only: false
