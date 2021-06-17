@@ -1,2 +1,2 @@
-FROM ubuntu:20.04
+FROM sleemp/osmosis:0.47
 COPY . /app
