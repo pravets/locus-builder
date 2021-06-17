@@ -2,7 +2,8 @@ FROM sleemp/osmosis:0.47
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
-RUN apt-get install --yes curl
+RUN apt-get install --yes curl python3
+RUN pip install yadisk
 
 COPY . /app
 
