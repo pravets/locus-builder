@@ -6,8 +6,8 @@ RUN apt-get install --yes curl
 
 COPY . /app
 
-RUN chmod  RUN chmod +x /app/download_poly.sh 
-RUN chmod  RUN chmod +x /app/update_poly.sh 
+RUN chmod +x /app/download_poly.sh 
+RUN chmod +x /app/update_poly.sh 
 
 WORKDIR /app
 
